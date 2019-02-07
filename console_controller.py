@@ -64,18 +64,6 @@ class ConsoleController:
         @param ConsoleController self:
         @rtype: None
 
-        TODO:
-        -Start by giving instructions about how to enter moves (which is up to
-        you). Be sure to provide some way of exiting the game, and indicate
-        that in the instructions.
-        -Use python's built-in function input() to read a potential move from
-        the user/player. You should print an error message if the input does
-        not meet the specifications given in your instruction or if it denotes
-        an invalid move (e.g. moving a cheese onto a smaller cheese).
-        You can print error messages from this method and/or from
-        ConsoleController.move; it's up to you.
-        -After each valid move, use the method TOAHModel.__str__ that we've
-        provided to print a representation of the current state of the game.
         """
         # moves should be in the form of two int, like 0 1
         # there is a whitespace between them
@@ -105,10 +93,7 @@ class ConsoleController:
 if __name__ == '__main__':
     c = ConsoleController(4, 4)
     c.play_loop()
-    # You should initiate game play here. Your game should be playable by
-    # running this file.
-
-    # Leave lines below as they are, so you will know what python_ta checks.
+    
     # You will need consolecontroller_pyta.txt in the same folder.
     import python_ta
     python_ta.check_all(config="consolecontroller_pyta.txt")
