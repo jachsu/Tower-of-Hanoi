@@ -144,7 +144,6 @@ if __name__ == '__main__':
     delay_between_moves = 0.5
     console_animate = True
 
-    # DO NOT MODIFY THE CODE BELOW.
     four_stools = TOAHModel(4)
     four_stools.fill_first_stool(number_of_cheeses=num_cheeses)
 
@@ -153,7 +152,7 @@ if __name__ == '__main__':
                         delay_btw_moves=delay_between_moves)
 
     print(four_stools.number_of_moves())
-    # Leave files below to see what python_ta checks.
+
     # File tour_pyta.txt must be in same folder
     import python_ta
     python_ta.check_all(config="tour_pyta.txt")
